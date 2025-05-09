@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¡Nos Casamos! José Antonio & Carolina</title>
+
+  <!-- Tipografías -->
+  <link href="https://fonts.googleapis.com/css2?family=Simonetta:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0e6ad04.js" crossorigin="anonymous"></script>
+
+  <style>
+    @font-face {
+      font-family: 'Brittany';
+      src: url('https://raw.githubusercontent.com/bugatti17/NosCasamos-v2/refs/heads/main/BrittanySignature.ttf') format('truetype');
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Simonetta', serif;
+      background: url('fondo_mapa.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #3c2f2f;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 20px;
+      padding: 25px;
+      max-width: 720px;
+      margin: auto;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-family: 'Brittany', cursive;
+      font-size: 50px;
+      margin: 10px 0 20px;
+    }
+
+    .names {
+      font-family: 'Brittany', cursive;
+      font-size: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 25px;
+    }
+
+    .names img {
+      height: 40px;
+      vertical-align: middle;
+    }
+
+    img.photo {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    .nowrap {
+      white-space: nowrap;
+    }
+
+    .countdown {
+      font-size: 24px;
+      background: #fff8f0;
+      padding: 16px 24px;
+      margin: 25px auto;
+      border-radius: 18px;
+      display: inline-block;
+      box-shadow: 0 0 10px rgba(0,0,0,0.08);
+      border: 2px dashed #c58f63;
+      position: relative;
+    }
+
+    .countdown::before {
+      content: '⏳';
+      position: absolute;
+      top: -12px;
+      left: -12px;
+      font-size: 24px;
+      background: #fff8f0;
+      border-radius: 50%;
+      padding: 4px;
+    }
+
+    .locations a {
+      display: block;
+      color: #6b4e3d;
+      background: #f5e7da;
+      margin: 10px auto;
+      max-width: 300px;
+      padding: 12px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .locations a:hover {
+      background: #e0cabb;
+    }
+
+    .rsvp-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: #25d366;
+      color: white;
+      text-decoration: none;
+      padding: 12px 22px;
+      border-radius: 40px;
+      font-weight: bold;
+      margin: 12px;
+      font-size: 18px;
+      transition: all 0.3s ease;
+    }
+
+    .rsvp-button i {
+      font-size: 22px;
+    }
+
+    .rsvp-button:hover {
+      background: #1ebe5b;
+    }
+
+    .quote {
+      font-style: italic;
+      margin-top: 30px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>¡Nos Casamos!</h1>
+
+  <div style="text-align: center; margin-bottom: 25px;">
+  <img src="Docpaginaweb.png" alt="José Antonio y Carolina"
+       style="width: 50%; max-width: 180px; height: auto;" />
+</div>
+
+
+    <img src="foto_novios.jpg" alt="Foto de los novios" class="photo" />
+
+    <p>La ceremonia tendrá lugar el <strong class="nowrap">27 de septiembre de 2025</strong><br>
+    a las <strong>12:30h</strong> en la <strong>Iglesia de la Inmaculada Concepción</strong> (La Carolina, Jaén).<br>
+    Después lo celebraremos en <strong>Hacienda la Masía</strong>, una finca preciosa rodeada de naturaleza.</p>
+
+    <div class="countdown" id="countdown"></div>
+
+    <div class="locations">
+      <a href="https://maps.google.com/?q=Iglesia+de+la+Inmaculada+Concepción,+La+Carolina,+Jaén" target="_blank">
+        📍 Iglesia de la Inmaculada Concepción
+      </a>
+      <a href="https://maps.google.com/?q=Hacienda+la+Masía,+Jaén" target="_blank">
+        🌿 Hacienda la Masía
+      </a>
+    </div>
+
+<a href="https://wa.me/34690298600" class="rsvp-button" target="_blank">
+  <img src="https://raw.githubusercontent.com/bugatti17/NosCasamos-v2/refs/heads/main/Icono_Whastapp.svg" alt="WhatsApp" style="height: 22px;">
+  Confirmar a Carolina
+</a>
+    <a href="https://wa.me/34671626965" class="rsvp-button" target="_blank">
+        <img src="https://raw.githubusercontent.com/bugatti17/NosCasamos-v2/refs/heads/main/Icono_Whastapp.svg" alt="WhatsApp" style="height: 22px;">
+       Confirmar a José Antonio
+    </a>
+
+    <p class="quote">"El amor es el mejor guía para cualquier viaje"</p>
+  </div>
+
+  <script>
+    const countdown = document.getElementById('countdown');
+    const targetDate = new Date('2025-09-27T12:30:00');
+    function updateCountdown() {
+      const now = new Date();
+      const diff = targetDate - now;
+      if (diff <= 0) {
+        countdown.textContent = "¡Ha llegado el gran día!";
+        return;
+      }
+      const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const m = Math.floor((diff / (1000 * 60)) % 60);
+      const s = Math.floor((diff / 1000) % 60);
+      countdown.textContent = `Faltan ${d} días, ${h}h ${m}m ${s}s`;
+    }
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+  </script>
+</body>
+</html>
