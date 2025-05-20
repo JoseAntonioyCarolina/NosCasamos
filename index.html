@@ -30,19 +30,7 @@
       border: none;
       border-radius: 12px;
     }
-    @media (max-width: 768px) {
-      iframe {
-        height: 2400px;
-      }
-    }
-
-    @media (min-width: 769px) {
-      iframe {
-        height: 1700px;
-      }
-    }
-
-    .container {
+      .container {
       background-color: rgba(255, 255, 255, 0.8);
       border-radius: 20px;
       padding: 25px;
@@ -195,13 +183,22 @@
         🌿 Hacienda la Masía
       </a>
     </div>
+
+    <!-- Botón para abrir el formulario de Google en una nueva pestaña -->
+<div style="text-align: center; margin: 40px 0;">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLScg5nQ6fKv5ySqdoZsnW1wuaAyYk2H_gjlsmMxHpICptJqhpQ/viewform"
+     target="_blank"
+     style="display: inline-block; background: #c58f63; color: white; text-decoration: none; padding: 14px 28px; border-radius: 30px; font-family: 'Simonetta', serif; font-size: 20px;">
+     Confirmar asistencia
+  </a>
+
+  <p style="margin-top: 20px; font-style: italic; font-size: 18px; color: #3c2f2f;">
+    Al hacer clic se abrirá el formulario en otra pestaña.  
+    Una vez enviado, podrás volver desde allí a esta página.
+  </p>
+</div>
+
     
-<!-- SECCIÓN DEL FORMULARIO INTEGRADO -->
-    <section id="formulario-boda" class="form-section">
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScg5nQ6fKv5ySqdoZsnW1wuaAyYk2H_gjlsmMxHpICptJqhpQ/viewform?embedded=true#confirmacion"
-          width="100%" frameborder="0" marginheight="0" marginwidth="0"
-          style="border: none; border-radius: 12px;">
-    </iframe>
 </section>
 <!-- SECCIÓN DE BOTONES DE WHATSAPP -->
 <p style="font-family: 'Simonetta', serif; font-size: 20px; text-align: center; margin-top: 40px;">
@@ -240,19 +237,5 @@
     updateCountdown();
   </script>
 
-  <!-- Script 2: Scroll automático al mensaje de confirmación -->
-
-  <script>
-  <!-- Script para scroll automático al formulario tras enviar -->
-  <script>
-    window.addEventListener("load", function() {
-      if (window.location.hash === "#confirmacion") {
-        const formulario = document.getElementById("formulario-boda");
-        if (formulario) {
-          formulario.scrollIntoView({ behavior: "smooth", block: "start" });
-        }
-      }
-    });
-  </script>
-</body>
+  </body>
 </html>
